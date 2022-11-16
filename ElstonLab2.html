@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styleLab2.css">
+    </head>
+    <body>
+        <h1> Schedule for Kaylie Elston - cg3fa22gl - Fall, 2022 </h1>
+        <h2>How To Define a Table</h2>
+        <p>Tables are a structured set of data made up of rows and collumns.
+            <ul>
+                <li>Use &lt;tr&gt; to create a table row</li>
+                <li>Use &lt;th&gt; to create a table header (the text will be bold) in a table row</li>
+                <li>Use &lt;td&gt; to define where your table data is in a table row</li>
+                <li>Use &lt;thead&gt; to define where the head of your table is (for the browser)</li>
+                <li>Use &lt;tfoot&gt; to define where the foot of your table is (for the browser)</li>
+                <li>Use &lt;caption&gt; immediately after the &lt;table&gt; tag give a title to your table</li>
+            </ul>
+        </p>
+        <h2>Colspan vs. Rowspan</h2>
+        <p>
+            <ul>
+                <li>Colspan: makes a table cell span more than one collumn</li>
+                <li>Rowspan: makes a table cell span more than one row</li>
+            </ul>
+        </p>
+        <h2>Cell Spacing vs. Padding</h2>
+        <p>
+            <ul>
+                <li>Cell spacing is what defines the space between individual cells on your file.</li>
+                <li>Cell padding defines the space between a cell's border and the content in that cell. You can establish which side you want the space on, too, by specifying that the padding is on the left, right, top, or bottom.</li>
+            </ul>
+        </p>
+        <h2>How to Define Table Borders/Border Widths</h2>
+        <p>
+            <ul>
+                <li>In your CSS file, specify which tag you would like to style and then, inside of the {}, you can change the border-style, border-width, and border-color!</li>
+                <li>Outside of CSS, inside of the &lt;table&gt; tag, you can type border="#" to define how large you want the table borders.</li>
+            </ul>
+        </p>
+        <table border="1">
+            <caption> 
+                <h2>My Weekly Schedule</h2>
+            </caption>
+            <tr>
+                <th></th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <th>8:00-9:00</th>
+                <td rowspan="7">wake up and do homework</td>
+                <td rowspan="2">wake up and go to campus</td>
+                <td>wake up and go to campus</td>
+                <td rowspan="6">wake up and go to campus</td>
+                <td>wake up and go to campus</td>
+                <td rowspan="6">wake up and go to campus</td>
+                <td rowspan="7">wake up and do homework</td>
+            </tr>
+            <tr>
+                <th>9:00-10:00</th>
+                <td rowspan="2">VIS 20 Lecture</td>
+                <td rowspan="2">VIS 20 Lecture</td>
+            </tr>
+            <tr>
+                <th>10:00-11:00</th>
+                <td>VIS 20 Discussion</td>
+            </tr>
+            <tr>
+                <th>11:00-12:00</th>
+                <td rowspan="2">wait for next class (read)<img src="https://www.neh.gov/sites/default/files/styles/medium/public/2020-06/Open-Book.jpg?itok=wMg1EBM-" alt="open book" width="150" height="97"></td>
+                <td rowspan="7">go home,eat, go to campus again</td>
+                <td rowspan="5">wait for next class (read)<img src="https://www.neh.gov/sites/default/files/styles/medium/public/2020-06/Open-Book.jpg?itok=wMg1EBM-" alt="open book" width="150" height="97"></td>
+            </tr>
+            <tr>
+                <th>12:00-1:00</th>
+            </tr>
+            <tr>
+                <th>1:00-2:00</th>
+                <td>COGS 3 Discussion</td>
+            </tr>
+            <tr>
+                <th>2:00-3:00</th>
+                <td>DOC 1 Lecture</td>
+                <td>DOC 1 Lecture</td>
+                <td>DOC 1 Lecture</td>
+            </tr>
+            <tr>
+                <th>3:00-4:00</th>
+                <td rowspan="8">draw, read, go to sleep<img src="https://media.istockphoto.com/photos/sketchbook-with-a-drawing-of-a-house-closeup-girl-draws-with-her-left-picture-id1256286316?k=20&m=1256286316&s=612x612&w=0&h=1Pqmt5otHPxLby7gbMTnGRzUR2Dip348rQeIq9bVOZg=" alt="drawing" width="150" height="100"></td>
+                <td rowspan="8">do homework, eat, go to sleep</td>
+                <td>DOC 1 Discussion</td>
+                <td rowspan="8">do homework, eat, go to sleep</td>
+                <td rowspan="8">draw, read, go to sleep<img src="https://media.istockphoto.com/photos/sketchbook-with-a-drawing-of-a-house-closeup-girl-draws-with-her-left-picture-id1256286316?k=20&m=1256286316&s=612x612&w=0&h=1Pqmt5otHPxLby7gbMTnGRzUR2Dip348rQeIq9bVOZg=" alt="drawing" width="150" height="100"></td>
+            </tr>
+            <tr>
+                <th>4:00-5:00</th>
+                <td rowspan="7">do homework, eat, go to sleep</td>
+                <td rowspan="2">PHYS 1A Lab</td>
+            </tr>
+            <tr>
+                <th>5:00-6:00</th>
+            </tr>
+            <tr>
+                <th>6:00-7:00</th>
+                <td rowspan="2">COGS 3 Lecture</td>
+                <td rowspan="2">COGS 3 Lecture</td>
+            </tr>
+            <tr>
+                <th>7:00-8:00</th>
+            </tr>
+            <tr>
+                <th>8:00-9:00</th>
+                <td rowspan="3">go home and go to sleep</td>
+                <td rowspan="3">eat, go to sleep</td>
+            </tr>
+            <tr>
+                <th>9:00-10:00</th>
+            </tr>
+            <tr>
+                <th>10:00-11:00</th>
+            </tr>
+        </table>
+        <p>
+            <h3>None of my extracurriculars have a webpage, so enjoy <a href="https://www.youtube.com/watch?v=xLrp_VoXbck&ab_channel=TedNivison">this video</a> that I like to watch every once in a while :)</h3>
+        </p>
+    </body>
+</html>
